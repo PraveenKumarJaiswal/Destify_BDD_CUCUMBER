@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="254" started-at="2023-06-16T15:47:46 IST" finished-at="2023-06-16T15:47:46 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@38bc8ab5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="254" started-at="2023-06-16T15:47:46 IST" finished-at="2023-06-16T15:47:46 IST">
+      <class name="com.runner.TestRunner">
+        <test-method status="FAIL" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.TestRunner@38bc8ab5]" name="setUpClass" is-config="true" duration-ms="152" started-at="2023-06-16T15:47:46 IST" finished-at="2023-06-16T15:47:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@176d53b2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.BootstrapMethodError">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: io/cucumber/core/options/CucumberPropertiesProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.BootstrapMethodError: java.lang.NoClassDefFoundError: io/cucumber/core/options/CucumberPropertiesProvider
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:89)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoClassDefFoundError: io/cucumber/core/options/CucumberPropertiesProvider
+... 28 more
+Caused by: java.lang.ClassNotFoundException: io.cucumber.core.options.CucumberPropertiesProvider
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.BootstrapMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="writeExtentReport()[pri:0, instance:com.runner.TestRunner@38bc8ab5]" name="writeExtentReport" is-config="true" duration-ms="-1686910666917" started-at="2023-06-16T15:47:46 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeExtentReport -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.TestRunner@38bc8ab5]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2023-06-16T15:47:46 IST" finished-at="2023-06-16T15:47:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
