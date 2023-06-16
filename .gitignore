@@ -1,0 +1,7 @@
+/target/
+.settings
+.classpath
+node_modules/
+package-lock.json
+bin/
+.project
