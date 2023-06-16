@@ -7,7 +7,7 @@ import Resource.BaseClass;
 import Resource.UtilityClass;
 
 public class LoginPagePanel extends BaseClass {
-	LoginPage loginPage = new LoginPage();
+	LoginPage loginPage;
 	UtilityClass utilityClass = new UtilityClass();
 
 	public LoginPagePanel() {

@@ -1,6 +1,7 @@
-Feature: Test Signup Functionality 
-    @regression
-     Scenario Outline: Verify destify Signup Functionality
+Feature: Test Signup Functionality
+
+  @regression
+  Scenario: Verify destify Signup Functionality
     Given Launch destify website
     When user clicks on Signup link
     Then user clicks on plan my destination wedding
@@ -18,10 +19,4 @@ Feature: Test Signup Functionality
     Then user select preferred wedding date
     Then user select second choice wedding date
     Then user clicks on next button
-   
-    Examples: 
-      | emailAddress   						 | password 			|                                                
-      | asdw.sloadwxne@siedsx.com | Sadsls@456! | 
-    
-    
-  
+

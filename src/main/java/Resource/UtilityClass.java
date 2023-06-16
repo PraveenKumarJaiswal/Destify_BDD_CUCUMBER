@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -26,7 +27,7 @@ public class UtilityClass extends BaseClass {
 	// public static UtilityClass utilityClass = new UtilityClass();
 	public static String dateToSelect;
 	Actions act = new Actions(driver);
-	public static WebDriverWait wait = new WebDriverWait(driver, 20);
+	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public static void verifyText(WebElement ele, String expectedTxtMSg) {

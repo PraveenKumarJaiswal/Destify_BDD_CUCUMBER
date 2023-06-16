@@ -10,7 +10,7 @@ import Resource.BaseClass;
 import Resource.UtilityClass;
 
 public class HomePagePanel extends BaseClass  {
-	HomePage homePage = new HomePage();
+	HomePage homePage;
 	UtilityClass utilityClass = new UtilityClass();
 
 
