@@ -44,7 +44,7 @@ public class SignUpStep extends BaseClass {
 	}
 	@Then("user select resort")
 	public void user_select_resort() throws Throwable {
-	     
+	     Thread.sleep(30000);
 		SignUpPagePanel.selectResort();
 	}
 	@Then("user select venue")
@@ -58,14 +58,15 @@ public class SignUpStep extends BaseClass {
 	     
 	}
 	@Then("user select preferred wedding date")
-	public void user_select_preferred_wedding_date() {
-	     
+	public void user_select_preferred_wedding_date() throws Throwable {
+		SignUpPagePanel.selectPreferedWeddingDate();
+		SignUpPagePanel.okDateBtn();
 	     
 	}
 	@Then("user select second choice wedding date")
-	public void user_select_second_choice_wedding_date() {
-	     
-	     
+	public void user_select_second_choice_wedding_date() throws Throwable {
+		SignUpPagePanel.selectSecondWeddingDate();
+		SignUpPagePanel.okAltDateBtn();
 	}
 
 

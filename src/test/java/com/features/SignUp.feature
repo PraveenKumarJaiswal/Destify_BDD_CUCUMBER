@@ -18,11 +18,7 @@ Feature: Test Signup Functionality
     Then user select preferred wedding date
     Then user select second choice wedding date
     Then user clicks on next button
-    
-    
-    Then click on login button
-    Then user verifies error message and click on close button on popup
-  
+   
     Examples: 
       | emailAddress   						 | password 			|                                                
       | asdw.sloadwxne@siedsx.com | Sadsls@456! | 

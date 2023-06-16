@@ -56,9 +56,17 @@ public class SignUpPagePanel extends BaseClass  {
 	}
 	
 	public static void selectResort() throws Throwable {
-		Thread.sleep(9000);
+		System.out.println("waited 30 sec............");
+		UtilityClass.scrollToElement();
+		Thread.sleep(3000);
+		System.out.println("waited 20 sec");
 		UtilityClass.waitForElement(SignUpPage.selectBtn);
 		SignUpPage.selectBtn.click();
+	}
+	
+	public static void scrollscreen() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)", "");
 	}
 	
 	public static void selectVenue() throws Throwable {
@@ -73,6 +81,35 @@ public class SignUpPagePanel extends BaseClass  {
 		SignUpPage.selectBtn.click();
 	}
 	
+	public static void okDateBtn() throws Throwable {
+		Thread.sleep(3000);
+		UtilityClass.waitForElement(SignUpPage.okDateBtn);
+		SignUpPage.okDateBtn.click();
+	}
+	
+	public static void okAltDateBtn() throws Throwable {
+		Thread.sleep(3000);
+		UtilityClass.waitForElement(SignUpPage.okAltDateBtn);
+		SignUpPage.okAltDateBtn.click();
+	}
+	
+	public static void selectPreferedWeddingDate() throws Throwable {
+		Thread.sleep(3000);
+		UtilityClass.waitForElement(SignUpPage.preferredWeddingDate);
+		SignUpPage.preferredWeddingDate.click();
+		
+		UtilityClass.waitForElement(SignUpPage.selectDate1);
+		SignUpPage.selectDate1.click();
+	}
+	
+	public static void selectSecondWeddingDate() throws Throwable {
+		Thread.sleep(3000);
+		UtilityClass.waitForElement(SignUpPage.secondChoiceWeddingDate);
+		SignUpPage.secondChoiceWeddingDate.click();
+		
+		UtilityClass.waitForElement(SignUpPage.selectDate2);
+		SignUpPage.selectDate2.click();
+	}
 	
 	public static  void selectProductDDValue(String val) {
 

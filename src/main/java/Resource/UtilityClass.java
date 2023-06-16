@@ -27,7 +27,7 @@ public class UtilityClass extends BaseClass {
 	public static String dateToSelect;
 	Actions act = new Actions(driver);
 	public static WebDriverWait wait = new WebDriverWait(driver, 20);
-	JavascriptExecutor js = (JavascriptExecutor) driver;
+	static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public static void verifyText(WebElement ele, String expectedTxtMSg) {
 
@@ -276,7 +276,7 @@ public class UtilityClass extends BaseClass {
 		return pathNew;
 	}
 
-	public void scrollToElement(int x, int y) {
+	public static void scrollToElement() {
 
 		js.executeScript("javascript:window.scrollBy(250,350)");
 	}

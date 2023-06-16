@@ -14,8 +14,8 @@ public class Hooks extends BaseClass {
 
 	@After
 	public void afterScenario() throws Throwable {
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 	}
 
 }
